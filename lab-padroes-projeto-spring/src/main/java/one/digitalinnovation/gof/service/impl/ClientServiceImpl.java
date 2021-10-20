@@ -2,12 +2,14 @@ package one.digitalinnovation.gof.service.impl;
 
 import one.digitalinnovation.gof.model.Cliente;
 import one.digitalinnovation.gof.service.ClientService;
+import org.springframework.stereotype.Service;
 
 /*
 * Implementação de <b>Strategy</b> {@link ClientService}, a qual pode ser
 * injetada pelo Spring (via {@link Autowired}). Com isso, como essa classe é um
 * {@link Service}, ela será tratada como um <b>Singleton</b>
 * */
+@Service
 public class ClientServiceImpl implements ClientService {
 
     // TODO Singleton: Injetar os componentes do Spring com @Autowired
